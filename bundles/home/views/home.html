@@ -1,0 +1,18 @@
+<div>
+	<h1>This is a {{title}}.</h1>
+</div>
+
+<ul>
+	<li ng-repeat="user in users">{{user.name}}</li>
+</ul>
+
+<table ng-table="vm.tableParams" class="table" show-filter="true">
+    <tr ng-repeat="user in $data">
+        <td title="'Name'" sortable="'name'">
+            {{user.name}}</td>
+        <td title="'Age'" sortable="'id'">
+            {{user.id}}</td>
+    </tr>
+</table>
+
+<a ui-sref="home.edit">Edit</a>

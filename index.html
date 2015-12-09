@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="bronzer">
+	<head>
+		<title>Bronzer</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--[APP STYLES]-->
+        <link href="static/components/bootstrap/dist/css/bootstrap-theme.min.css?v=1443017110.967" rel="stylesheet"></script>
+        <link href="static/components/bootstrap/dist/css/bootstrap.min.css?v=1443017110.998" rel="stylesheet"></script>
+        <link href="static/css/style.css?v=1443017323.374" rel="stylesheet"></script>
+        <link href="static/components/animate.css/animate.min.css?v=1443015363.428" rel="stylesheet"></script>
+        <link href="static/components/font-awesome/css/font-awesome.min.css?v=1443016095.604" rel="stylesheet"></script>
+        <link href="static/components/ng-table/dist/ng-table.min.css?v=1443102672.665" rel="stylesheet"></script>
+        <!--[APP STYLES END]-->
+		<!--[APP COMPONENTS]-->
+        <script src="static/components/jquery/dist/jquery.min.js"></script>
+        <script src="static/components/angular/angular.min.js"></script>
+        <script src="static/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="static/components/angular-resource/angular-resource.min.js"></script>
+        <script src="static/components/angular-strap/dist/angular-strap.min.js"></script>
+        <script src="static/components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+        <script src="static/components/ng-table/dist/ng-table.min.js"></script>
+        <!--[APP COMPONENTS END]-->
+		<!--[STATIC SCRIPTS]-->
+        <script src="static/vendor/index.js?ver=1442842328.118"></script>
+        <script src="static/vendor/router.js?ver=1442842652.884"></script>
+        <!--[STATIC SCRIPTS END]-->
+		<script>
+			var app = angular.module('bronzer',[
+				'ui.router',
+				'ngResource',
+				'ngTable'
+			])
+			// angular.bootstrap(document, ['bronzer']);
+		</script>
+		<!--[APP SCRIPTS]-->
+        <script src="router.js?ver=1443180537.139"></script>
+        <script src="facade/product.js?ver=1444735373.924"></script>
+        <script src="facade/user.js?ver=1443098489.606"></script>
+        <script src="common/productService.js?ver=1444738024.072"></script>
+        <script src="common/userService.js?ver=1443185544.359"></script>
+        <script src="bundles/home/controller.js?ver=1444738522.925"></script>
+        <script src="bundles/home/router.js?ver=1443182803.476"></script>
+        <script src="bundles/order/controller.js?ver=1443180417.578"></script>
+        <script src="bundles/order/router.js?ver=1443180333.536"></script>
+        <!--[APP SCRIPTS END]-->
+	</head>
+	<body>
+		<div ui-view class="container">
+			<style>
+				#load{
+					padding:50px;
+					margin:0 auto;
+				}
+			</style>
+			<div id="load">
+				<span class="fa fa-refresh fa-spin"></span> 正在加载...
+			</div>
+		</div>
+	</body>
+</html>

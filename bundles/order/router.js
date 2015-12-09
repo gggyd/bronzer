@@ -1,0 +1,16 @@
+app
+	.config(['$stateProvider',
+		function($stateProvider){
+			$stateProvider
+				.state('order',{
+					url:'/order',
+					parent:'default',
+					views:{
+						'content':{
+							templateUrl:'bundles/order/views/order.html',
+							controller:'orderCtrl'
+						}
+					}
+				})
+		}
+	])

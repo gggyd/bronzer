@@ -1,0 +1,30 @@
+module.exports = {
+	server:{
+		port:3500
+	},
+	staticScripts:[
+		'static/vendor/**/*.js'
+	],
+	appScripts:[
+		'router.js',
+		'facade/**/*.js',
+		'common/**/*.js',
+		'bundles/**/*.js'
+	],
+	appStyles:[
+		'static/components/bootstrap/dist/css/*.min.css',
+		'static/css/**/*.less',
+		'static/css/**/*.css',
+		'static/components/animate.css/*.min.css',
+		'static/components/font-awesome/css/*.min.css',
+		'static/components/ng-table/dist/*.min.css'
+	],
+	appComponents:[
+		'static/components/jquery/dist/*.min.js',
+		'static/components/angular/*.min.js',
+		'static/components/angular-ui-router/release/*.min.js',
+		'static/components/angular-resource/*.min.js',
+		'static/components/angular-strap/dist/*.min.js',
+		'static/components/ng-table/dist/*.min.js'
+	]
+}

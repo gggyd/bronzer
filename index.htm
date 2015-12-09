@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="bronzer">
+	<head>
+		<title>Bronzer</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!--[APP STYLES]-->
+		<!--[APP STYLES END]-->
+		<!--[APP COMPONENTS]-->
+		<!--[APP COMPONENTS END]-->
+		<!--[STATIC SCRIPTS]-->
+		<!--[STATIC SCRIPTS END]-->
+		<script>
+			var app = angular.module('bronzer',[
+				'ui.router',
+				'ngResource',
+				'ngTable'
+			])
+			// angular.bootstrap(document, ['bronzer']);
+		</script>
+		<!--[APP SCRIPTS]-->
+		<!--[APP SCRIPTS END]-->
+	</head>
+	<body>
+		<div ui-view class="container">
+			<style>
+				#load{
+					padding:50px;
+					margin:0 auto;
+				}
+			</style>
+			<div id="load">
+				<span class="fa fa-refresh fa-spin"></span> 正在加载...
+			</div>
+		</div>
+	</body>
+</html>
